@@ -14,39 +14,8 @@ Ce projet est un gestionnaire de mots de passe écrit en Rust, permettant de sto
 2. **Configurer Cargo :**
    Assurez-vous d'avoir Rust et Cargo installés. Suivez les instructions sur [rust-lang.org](https://www.rust-lang.org/learn/get-started).
 
-3. **Configurer les raccourcis :**
-   Les raccourcis sont disponibles dans le dépôt. Suivez ces étapes pour les configurer :
+3. **Config shortcut**
 
-   - **Créer un répertoire `bin` dans votre répertoire personnel :**
-     ```sh
-     mkdir -p ~/bin
-     ```
-
-   - **Copier les scripts de raccourcis dans le répertoire `bin` :**
-     ```sh
-     cp pwd-add pwd-get pwd-list ~/bin/
-     ```
-
-   - **Rendre les scripts exécutables :**
-     ```sh
-     chmod +x ~/bin/pwd-add
-     chmod +x ~/bin/pwd-get
-     chmod +x ~/bin/pwd-list
-     ```
-
-   - **Ajouter `~/bin` à votre variable d'environnement PATH :**
-     Ouvrez le fichier `.bashrc` dans votre répertoire personnel avec un éditeur de texte, par exemple :
-     ```sh
-     nano ~/.bashrc
-     ```
-     Ajoutez la ligne suivante à la fin du fichier :
-     ```sh
-     export PATH="$HOME/bin:$PATH"
-     ```
-     Sauvegardez et fermez le fichier. Puis, rechargez le fichier `.bashrc` pour appliquer les modifications :
-     ```sh
-     source ~/.bashrc
-     ```
 
 ## Utilisation
 
@@ -54,26 +23,26 @@ Ce projet est un gestionnaire de mots de passe écrit en Rust, permettant de sto
 
 - **Ajouter un mot de passe :**
   ```sh
-  pwd-add <nom>
+  pwd add <nom>
   ```
   Exemple :
   ```sh
-  pwd-add gmail
+  pwd add gmail
   ```
   Le programme vous demandera d'entrer le mot de passe à ajouter.
 
 - **Récupérer un mot de passe :**
   ```sh
-  pwd-get <nom>
+  pwd get <nom>
   ```
   Exemple :
   ```sh
-  pwd-get gmail
+  pwd get gmail
   ```
   Le programme affichera le mot de passe associé au nom donné.
 
 - **Lister tous les noms de mots de passe enregistrés :**
   ```sh
-  pwd-list
+  pwd list
   ```
   Cette commande affichera tous les noms pour lesquels des mots de passe sont enregistrés.
